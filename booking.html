@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultation - Iceman Florals</title>
+    <link rel="preconnect" href="[fonts.googleapis.com](https://fonts.googleapis.com)">
+    <link rel="preconnect" href="[fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+    <link href="[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+    <div id="alert-wrapper"></div>
+
+    <div class="announcement-bar">
+        GET 30% OFF YOUR FIRST PURCHASE!
+    </div>
+
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html">ICEMAN <span class="logo-sub">FLORALS</span></a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="product.html">PRODUCTS</a>
+            <a href="#" class="active">SERVICES</a>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="btn-nav">BOOK SESSION NOW</a>
+        </div>
+    </header>
+
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-header">
+                <h3>Consultations & Workshops</h3>
+                <p>Let's plan your perfect floral moments together</p>
+            </div>
+
+            <form id="floral-booking-form" novalidate>
+                <div class="form-group">
+                    <label for="clientName">Full Name *</label>
+                    <input type="text" id="clientName" required placeholder="e.g., Drakey Chan">
+                    <span class="error-msg" id="name-error">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientEmail">Email Address *</label>
+                    <input type="email" id="clientEmail" required placeholder="drake@gmail.com">
+                    <span class="error-msg" id="email-error">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientPhone">Phone Number *</label>
+                    <input type="tel" id="clientPhone" required placeholder="e.g., +60123456789">
+                    <span class="error-msg" id="phone-error">Please enter your phone number.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventDate">Preferred Date *</label>
+                    <input type="date" id="eventDate" required>
+                    <span class="error-msg" id="date-error">Please select a valid date.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventTime">Preferred Time *</label>
+                    <select id="eventTime" required>
+                        <option value="" disabled selected>Select a slot...</option>
+                        <option value="09:00 AM">09:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="04:00 PM">04:00 PM</option>
+                    </select>
+                    <span class="error-msg" id="time-error">Please choose a preferred time slot.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceType">Service Type *</label>
+                    <select id="serviceType" required>
+                        <option value="" disabled selected>Choose a floral service...</option>
+                        <option value="Wedding Florals">Wedding Florals & Styling</option>
+                        <option value="Corporate Event">Corporate Event Decoration</option>
+                        <option value="Floral Workshop">Floral Workshop Registration</option>
+                    </select>
+                    <span class="error-msg" id="service-error">Please pick a service option.</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialNotes">Special Notes & Creative Requests</label>
+                    <textarea id="specialNotes" rows="5" placeholder="Preferred color palettes, themes, or specific flower varieties you love..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit-booking">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-info">
+                <h3>ICEMAN FLORALS</h3>
+                <p>Luxury blooms crafted intentionally for life's finest, most unforgettable moments.</p>
+                <p class="copyright">&copy; 2026 Iceman Florals. All rights reserved.</p>
+            </div>
+            <div class="footer-col vertical-info">
+                <h4>Business Info</h4>
+                <ul>
+                    <li><strong>Operating Hours:</strong></li>
+                    <li>Mon - Sat: 9:00 AM - 6:00 PM</li>
+                    <li>Sun: Closed</li>
+                    <li class="info-spacer"><strong>Location:</strong></li>
+                    <li>Kuala Lumpur, Malaysia</li>
+                </ul>
+            </div>
+            <div class="footer-col vertical-info">
+                <h4>Ways to Contact</h4>
+                <ul>
+                    <li><strong>WhatsApp / Call:</strong></li>
+                    <li><a href="tel:+60123456789">+60 12-345 6789</a></li>
+                    <li class="info-spacer"><strong>Email Inquiry:</strong></li>
+                    <li><a href="mailto:hello@icemanflorals.com">hello@icemanflorals.com</a></li>
+                    <li class="info-spacer"><strong>Socials:</strong></li>
+                    <li><a href="[instagram.com](https://www.instagram.com)" target="_blank">Instagram</a> &bull; <a href="[web.facebook.com](https://web.facebook.com/?_rdc=1&_rdr)" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('floral-booking-form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+            const nameField = document.getElementById('clientName');
+            const emailField = document.getElementById('clientEmail');
+            const phoneField = document.getElementById('clientPhone');
+            const dateField = document.getElementById('eventDate');
+            const timeField = document.getElementById('eventTime');
+            const serviceField = document.getElementById('serviceType');
+            const notesField = document.getElementById('specialNotes');
+
+            let isValid = true;
+
+            // Clear previous error states
+            document.querySelectorAll('.form-group').forEach(group => group.classList.remove('invalid'));
+
+            // Validate required fields
+            if (!nameField.value.trim()) {
+                nameField.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!emailField.value.trim() || !emailField.value.includes('@')) {
+                emailField.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!phoneField.value.trim()) {
+                phoneField.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!dateField.value) {
+                dateField.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!timeField.value) {
+                timeField.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+            if (!serviceField.value) {
+                serviceField.parentElement.classList.add('invalid');
+                isValid = false;
+            }
+
+            // Stop if validation fails
+            if (!isValid) return;
+
+            // Build payload (removed undefined promoField reference)
+            const payload = {
+                id: Date.now(),
+                name: nameField.value.trim(),
+                email: emailField.value.trim(),
+                phone: phoneField.value.trim(),
+                date: dateField.value,
+                time: timeField.value,
+                service: serviceField.value,
+                notes: notesField.value.trim()
+            };
+
+            // Save to localStorage
+            let currentBookings = JSON.parse(localStorage.getItem('iceman_bookings')) || [];
+            currentBookings.push(payload);
+            localStorage.setItem('iceman_bookings', JSON.stringify(currentBookings));
+
+            // Show success alert
+            const alertWrapper = document.getElementById('alert-wrapper');
+            alertWrapper.innerHTML = `
+                <div class="bootstrap-alert alert-success">
+                    <span class="alert-text"><strong>Thank you, ${payload.name}!</strong> Your consultation for ${payload.date} has been requested. We will contact you shortly.</span>
+                    <button type="button" class="alert-close-btn" onclick="this.parentElement.style.display='none'">&times;</button>
+                </div>
+            `;
+
+            // Reset form and scroll to top
+            this.reset();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
