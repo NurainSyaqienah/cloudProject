@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Featured Bouquets - Iceman Florals</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+   <div class="announcement-bar">
+      GET 30% OFF YOUR FIRST PURCHASE!
+   </div>
+
+   <header class="main-header">
+      <div class="logo">
+         <a href="#">ICEMAN <span class="logo-sub">FLORALS</span></a>
+      </div>
+
+      <nav class="nav-links">
+         <a href="index.html">HOME</a>
+         <a href="#" class="active">BEST SELLERS</a>
+         <a href="booking.html">SERVICES</a>
+      </nav>
+
+      <div class="header-actions">
+         <a href="booking.html" class="btn-nav">BOOK SESSION NOW</a>
+      </div>
+   </header>
+
+   <section class="products-showcase">
+      <div class="showcase-header">
+         <h3>Featured Bouquets</h3>
+         <p>Our finest arrangements, curated just for you</p>
+      </div>
+
+      <div class="showcase-controls">
+         <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="apology">Apology</button>
+            <button class="filter-btn" data-filter="romantic">Romantic</button>
+            <button class="filter-btn" data-filter="congratulations">Congratulations</button>
+            <button class="filter-btn" data-filter="new-beginnings">New Beginnings</button>
+            <button class="filter-btn" data-filter="weddings">Weddings</button>
+         </div>
+
+         <div class="sort-box">
+            <label for="sortFlowers">Sort by:</label>
+            <select id="sortFlowers">
+               <option value="default">Default</option>
+               <option value="price-low">Price: Low to High</option>
+               <option value="price-high">Price: High to Low</option>
+               <option value="name-az">Name: A to Z</option>
+               <option value="reviews-high">Most Reviews</option>
+            </select>
+         </div>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+         <div class="product-card" data-category="romantic new-beginnings" data-price="85" data-name="First Date Bouquet" data-reviews="36">
+            <div class="product-img-wrapper">
+               <img src="firstdateBo.jpg" alt="First Date Bouquet">
+            </div>
+            <div class="product-info">
+               <h4>First Date Bouquet</h4>
+               <p class="desc">A delicate arrangement of roses and carnations, perfect for romantic new beginnings.</p>
+               <p class="price">RM85</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot romantic"></span>ROMANTIC</span>
+                  <span class="tag"><span class="dot new-beginnings"></span>NEW BEGINNINGS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span class="reviews-count">(36 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="apology" data-price="120" data-name="Blush Tulips" data-reviews="16">
+            <div class="product-img-wrapper">
+               <img src="btulips2.jpg" alt="Blush Tulips">
+            </div>
+            <div class="product-info">
+               <h4>Blush Tulips</h4>
+               <p class="desc">Soft pink tulips that bring warmth and gentle softness, perfect for sincere apologies.</p>
+               <p class="price">RM120</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot apology"></span>APOLOGY</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span class="reviews-count">(16 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="romantic weddings" data-price="250" data-name="Pink Roses Bouquet" data-reviews="8">
+            <div class="product-img-wrapper">
+               <img src="pinkroses.jpg" alt="Pink Roses Bouquet">
+            </div>
+            <div class="product-info">
+               <h4>Pink Roses Bouquet</h4>
+               <p class="desc">A bouquet of blush-toned roses that gently expresses love and appreciation.</p>
+               <p class="price">RM250</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot romantic"></span>ROMANTIC</span>
+                  <span class="tag"><span class="dot weddings"></span>WEDDINGS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span class="reviews-count">(8 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="apology weddings" data-price="180" data-name="Classic White Lily" data-reviews="24">
+            <div class="product-img-wrapper">
+               <img src="whitelily.jpg" alt="Classic White Lily">
+            </div>
+            <div class="product-info">
+               <h4>Classic White Lily</h4>
+               <p class="desc">Elegant white lilies paired with seasonal greens for a calm and graceful statement.</p>
+               <p class="price">RM180</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot apology"></span>APOLOGY</span>
+                  <span class="tag"><span class="dot weddings"></span>WEDDINGS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★</span>
+                  <span class="reviews-count">(24 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="congratulations new-beginnings" data-price="95" data-name="Sunflower Sunshine" data-reviews="42">
+            <div class="product-img-wrapper">
+               <img src="sunflower.jpg" alt="Sunflower Sunshine">
+            </div>
+            <div class="product-info">
+               <h4>Sunflower Sunshine</h4>
+               <p class="desc">Bright sunflowers grouped together to celebrate happy moments and success.</p>
+               <p class="price">RM95</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot congratulations"></span>CONGRATULATIONS</span>
+                  <span class="tag"><span class="dot new-beginnings"></span>NEW BEGINNINGS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span class="reviews-count">(42 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="congratulations weddings" data-price="320" data-name="Graceful Orchids" data-reviews="11">
+            <div class="product-img-wrapper">
+               <img src="orchid.jpg" alt="Graceful Orchids">
+            </div>
+            <div class="product-info">
+               <h4>Graceful Orchids</h4>
+               <p class="desc">Premium orchid stems structured beautifully for elegant celebrations and weddings.</p>
+               <p class="price">RM320</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot congratulations"></span>CONGRATULATIONS</span>
+                  <span class="tag"><span class="dot weddings"></span>WEDDINGS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span class="reviews-count">(11 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="new-beginnings congratulations" data-price="210" data-name="Pastel Dreams Box" data-reviews="19">
+            <div class="product-img-wrapper">
+               <img src="pastelbox.jpg" alt="Pastel Dreams Box">
+            </div>
+            <div class="product-info">
+               <h4>Pastel Dreams Box</h4>
+               <p class="desc">A soft pastel bloom box arrangement, perfect for fresh starts and sweet celebrations.</p>
+               <p class="price">RM210</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot new-beginnings"></span>NEW BEGINNINGS</span>
+                  <span class="tag"><span class="dot congratulations"></span>CONGRATULATIONS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span class="reviews-count">(19 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="romantic weddings" data-price="290" data-name="Crimson Passion" data-reviews="53">
+            <div class="product-img-wrapper">
+               <img src="redroses.jpg" alt="Crimson Passion">
+            </div>
+            <div class="product-info">
+               <h4>Crimson Passion</h4>
+               <p class="desc">Deep crimson imported roses surrounded by classic dark eucalyptus greens.</p>
+               <p class="price">RM290</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot romantic"></span>ROMANTIC</span>
+                  <span class="tag"><span class="dot weddings"></span>WEDDINGS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span class="reviews-count">(53 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+         
+          <div class="product-card" data-category="congratulations weddings" data-price="320" data-name="Lily of The Valley" data-reviews="11">
+            <div class="product-img-wrapper">
+               <img src="valleylily.jpg" alt="Graceful Orchids">
+            </div>
+            <div class="product-info">
+               <h4>Lily of The Valley</h4>
+               <p class="desc">Fragrant white bell-shaped flowers arranged with lush greenery to create a graceful and sophisticated bouquet.</p>
+               <p class="price">RM320</p>
+               <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+               <div class="tag-row">
+                  <span class="tag"><span class="dot congratulations"></span>CONGRATULATIONS</span>
+                  <span class="tag"><span class="dot weddings"></span>WEDDINGS</span>
+               </div>
+
+               <div class="rating-row">
+                  <span class="stars">★★★★</span>
+                  <span class="reviews-count">(48 REVIEWS)</span>
+                  <button class="reviews-link">
+                     Read reviews →
+                  </button>
+               </div>
+            </div>
+         </div>
+
+         <div class="product-card" data-category="graduation" data-price="150" data-name="Golden Bloom Bouquet" data-reviews="28">
+   <div class="product-img-wrapper">
+      <img src="valleylily.jpg" alt="Golden Bloom Bouquet">
+   </div>
+   <div class="product-info">
+      <h4>Golden Bloom Bouquet</h4>
+      <p class="desc">A vibrant arrangement of sunflowers and yellow roses, perfect for celebrating academic achievements.</p>
+      <p class="price">RM150</p>
+      <a href="#" class="btn-view-details">VIEW DETAILS</a>
+
+      <div class="tag-row">
+         <span class="tag"><span class="dot graduation"></span>GRADUATION</span>
+      </div>
+
+      <div class="rating-row">
+         <span class="stars">★★★★★</span>
+         <span class="reviews-count">(28 REVIEWS)</span>
+         <button class="reviews-link">
+            Read reviews →
+         </button>
+      </div>
+   </div>
+</div>
+
+
+      </div>
+
+   <div class="popup-overlay" id="bouquetPopup">
+   <div class="popup-box">
+      <button class="close-popup" id="closePopup">&times;</button>
+
+      <img id="popupImage" src="" alt="Bouquet Image">
+
+      <div class="popup-content">
+         <h3 id="popupName"></h3>
+         <p id="popupPrice"></p>
+
+         <p><strong>Smell:</strong> <span id="popupSmell"></span></p>
+         <p><strong>Colours:</strong> <span id="popupColours"></span></p>
+         <p><strong>Flower Origin:</strong> <span id="popupOrigin"></span></p>
+         <p><strong>Usually For:</strong> <span id="popupPurpose"></span></p>
+         <p><strong>Symbolism:</strong> <span id="popupSymbolism"></span></p>
+         <p><strong>Description:</strong> <span id="popupDescription"></span></p>
+      </div>
+   </div>
+</div>
+
+<div class="review-popup-overlay" id="reviewPopup">
+   <div class="review-popup-box">
+      <button class="close-review-popup" id="closeReviewPopup">&times;</button>
+
+      <h2 id="reviewBouquetName"></h2>
+      <div id="reviewContainer"></div>
+   </div>
+</div>
+
+   </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col brand-info">
+                <h3>ICEMAN FLORALS</h3>
+                <p>Luxury blooms crafted intentionally for life’s finest, most unforgettable moments.</p>
+                <p class="copyright">&copy; 2026 Iceman Florals. All rights reserved.</p>
+            </div>
+            <div class="footer-col vertical-info">
+                <h4>Business Info</h4>
+                <ul>
+                    <li><strong>Operating Hours:</strong></li>
+                    <li>Mon - Sat: 9:00 AM - 6:00 PM</li>
+                    <li>Sun: Closed</li>
+                    <li class="info-spacer"><strong>Location:</strong></li>
+                    <li>Kuala Lumpur, Malaysia</li>
+                </ul>
+            </div>
+            <div class="footer-col vertical-info">
+                <h4>Ways to Contact</h4>
+                <ul>
+                    <li><strong>WhatsApp / Call:</strong></li>
+                    <li><a href="tel:+60123456789">+60 12-345 6789</a></li>
+                    <li class="info-spacer"><strong>Email Inquiry:</strong></li>
+                    <li><a href="mailto:hello@icemanflorals.com">hello@icemanflorals.com</a></li>
+                    <li class="info-spacer"><strong>Socials:</strong></li>
+                    <li><a href="https://www.instagram.com" target="_blank">Instagram</a> &bull; <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+  <script>
+   const filterButtons = document.querySelectorAll(".filter-btn");
+   const sortSelect = document.getElementById("sortFlowers");
+   const productsGrid = document.getElementById("productsGrid");
+   const productCards = Array.from(document.querySelectorAll(".product-card"));
+
+   let currentFilter = "all";
+
+   filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+         filterButtons.forEach(btn => btn.classList.remove("active"));
+         button.classList.add("active");
+
+         currentFilter = button.getAttribute("data-filter");
+         updateProducts();
+      });
+   });
+
+   sortSelect.addEventListener("change", updateProducts);
+
+   function updateProducts() {
+      let filteredProducts = productCards.filter(card => {
+         const categories = card.getAttribute("data-category");
+
+         if (currentFilter === "all") {
+            return true;
+         }
+
+         return categories.includes(currentFilter);
+      });
+
+      const sortValue = sortSelect.value;
+
+      filteredProducts.sort((a, b) => {
+         const priceA = Number(a.getAttribute("data-price"));
+         const priceB = Number(b.getAttribute("data-price"));
+         const nameA = a.getAttribute("data-name").toLowerCase();
+         const nameB = b.getAttribute("data-name").toLowerCase();
+         const reviewsA = Number(a.getAttribute("data-reviews"));
+         const reviewsB = Number(b.getAttribute("data-reviews"));
+
+         if (sortValue === "price-low") return priceA - priceB;
+         if (sortValue === "price-high") return priceB - priceA;
+         if (sortValue === "name-az") return nameA.localeCompare(nameB);
+         if (sortValue === "reviews-high") return reviewsB - reviewsA;
+
+         return 0;
+      });
+
+      productCards.forEach(card => {
+         card.style.display = "none";
+      });
+
+      filteredProducts.forEach(card => {
+         card.style.display = "flex";
+         productsGrid.appendChild(card);
+      });
+   }
+
+const bouquetDetails = {
+   "First Date Bouquet": {
+      smell: "Soft, fresh, and lightly sweet.",
+      colours: "Blush pink, cream, and soft green.",
+      origin: "Roses are commonly grown in Ecuador, Kenya, and the Netherlands.",
+      purpose: "Romantic dates, confessions, anniversaries, and new relationships.",
+      symbolism: "New love, affection, admiration, sweetness, and gentle romance.",
+      description: "A gentle bouquet that feels sweet, nervous, and romantic, perfect for expressing new affection."
+   },
+
+   "Blush Tulips": {
+      smell: "Clean, airy, and mildly sweet.",
+      colours: "Soft pink with fresh green stems.",
+      origin: "Tulips are strongly associated with the Netherlands, though they originally came from Central Asia.",
+      purpose: "Apologies, gentle appreciation, birthdays, and soft romantic gestures.",
+      symbolism: "Forgiveness, care, sincerity, comfort, and fresh hope.",
+      description: "A simple but elegant bouquet that gives a sincere and calming feeling."
+   },
+
+   "Pink Roses Bouquet": {
+      smell: "Classic rose scent, soft and floral.",
+      colours: "Blush pink, pastel rose, and fresh green.",
+      origin: "Roses are cultivated worldwide, especially in Ecuador, Kenya, and Europe.",
+      purpose: "Romance, weddings, appreciation, and anniversaries.",
+      symbolism: "Grace, admiration, love, appreciation, femininity, and elegance.",
+      description: "A luxurious rose bouquet that feels feminine, graceful, and meaningful."
+   },
+
+   "Classic White Lily": {
+      smell: "Strong, elegant, and sweet floral scent.",
+      colours: "White, ivory, and green.",
+      origin: "Lilies are commonly found across Asia, Europe, and North America.",
+      purpose: "Apologies, weddings, sympathy, formal events, and elegant gifts.",
+      symbolism: "Purity, peace, renewal, devotion, sympathy, and elegance.",
+      description: "A graceful bouquet with a clean and timeless appearance."
+   },
+
+   "Sunflower Sunshine": {
+      smell: "Light, earthy, and fresh.",
+      colours: "Bright yellow, golden brown, and green.",
+      origin: "Sunflowers originated from North America.",
+      purpose: "Congratulations, graduations, achievements, and cheerful gifts.",
+      symbolism: "Happiness, positivity, loyalty, success, warmth, and confidence.",
+      description: "A bright bouquet that brings happiness, confidence, and positive energy."
+   },
+
+   "Graceful Orchids": {
+      smell: "Soft, powdery, and elegant depending on the orchid type.",
+      colours: "White, purple, pink, or soft pastel tones.",
+      origin: "Orchids grow naturally in tropical regions, especially Southeast Asia.",
+      purpose: "Weddings, congratulations, luxury gifts, and formal celebrations.",
+      symbolism: "Luxury, beauty, strength, refinement, elegance, and rare love.",
+      description: "A premium arrangement that looks elegant, modern, and expensive."
+   },
+
+   "Pastel Dreams Box": {
+      smell: "Fresh, sweet, and soft floral.",
+      colours: "Pastel pink, lavender, cream, and soft green.",
+      origin: "Hydrangeas are native to Asia and the Americas.",
+      purpose: "New beginnings, birthdays, congratulations, and sweet surprises.",
+      symbolism: "Gratitude, softness, new chapters, sweetness, and heartfelt emotions.",
+      description: "A dreamy pastel arrangement that feels soft, feminine, and comforting."
+   },
+
+   "Crimson Passion": {
+      smell: "Rich, romantic, and classic rose scent.",
+      colours: "Deep red, dark green, and burgundy tones.",
+      origin: "Red roses are cultivated worldwide and are one of the most popular romantic flowers.",
+      purpose: "Romance, weddings, anniversaries, and passionate love gestures.",
+      symbolism: "Deep love, passion, devotion, courage, romance, and commitment.",
+      description: "A bold and dramatic bouquet that expresses deep love and devotion."
+   },
+
+   "Lily of The Valley": {
+      smell: "Delicate, sweet, fresh, and lightly powdery with a clean springtime fragrance.",
+      colours: "Pure white bell-shaped blooms with vibrant green stems and leaves.",
+      origin: "Native to Europe and parts of Asia, Lily of the Valley naturally grows in cool woodland environments.",
+      purpose: "Weddings, new beginnings, anniversaries, sympathy arrangements, Mother's Day, and meaningful gifts.",
+      symbolism: "Purity, happiness, luck, renewal, innocence, humility, and everlasting love.",
+      description: "A timeless and elegant bouquet featuring delicate bell-shaped flowers that symbolize purity and the return of happiness."
+   }
+};
+
+   const popup = document.getElementById("bouquetPopup");
+   const closePopup = document.getElementById("closePopup");
+
+   document.querySelectorAll(".btn-view-details").forEach(button => {
+      button.addEventListener("click", event => {
+         event.preventDefault();
+
+         const card = button.closest(".product-card");
+         const name = card.getAttribute("data-name");
+         const price = card.querySelector(".price").textContent;
+         const image = card.querySelector("img").src;
+         const details = bouquetDetails[name];
+
+         document.getElementById("popupImage").src = image;
+         document.getElementById("popupName").textContent = name;
+         document.getElementById("popupPrice").textContent = price;
+         document.getElementById("popupSmell").textContent = details.smell;
+         document.getElementById("popupColours").textContent = details.colours;
+         document.getElementById("popupOrigin").textContent = details.origin;
+         document.getElementById("popupPurpose").textContent = details.purpose;
+         document.getElementById("popupSymbolism").textContent = details.symbolism;
+         document.getElementById("popupDescription").textContent = details.description;
+
+         popup.classList.add("active");
+      });
+   });
+
+   closePopup.addEventListener("click", () => {
+      popup.classList.remove("active");
+   });
+
+   popup.addEventListener("click", event => {
+      if (event.target === popup) {
+         popup.classList.remove("active");
+      }
+   });
+
+   const bouquetReviews = {
+   "First Date Bouquet": [
+      { name: "Alya N.", stars: "★★★★★", text: "Such a sweet bouquet. The colours were soft and perfect for a romantic gift." },
+      { name: "Mika T.", stars: "★★★★★", text: "The flowers looked fresh and elegant. Very suitable for a first date." }
+   ],
+
+   "Blush Tulips": [
+      { name: "Iris W.", stars: "★★★★★", text: "The tulips were soft, fresh, and very calming." },
+      { name: "Nadia R.", stars: "★★★★☆", text: "Simple but elegant. The bouquet felt very sincere." }
+   ],
+
+   "Pink Roses Bouquet": [
+      { name: "Sofia K.", stars: "★★★★★", text: "The roses were full, fresh, and beautifully arranged." },
+      { name: "Amelia J.", stars: "★★★★★", text: "Very romantic and luxurious. Perfect for an anniversary." }
+   ],
+
+   "Classic White Lily": [
+      { name: "Mira Z.", stars: "★★★★★", text: "Very graceful and clean-looking. The lilies smelled lovely." },
+      { name: "Dina A.", stars: "★★★★★", text: "Perfect for a formal gift. The arrangement looked expensive." }
+   ],
+
+   "Sunflower Sunshine": [
+      { name: "Jasmine L.", stars: "★★★★★", text: "So bright and cheerful. It instantly made the room feel happier." },
+      { name: "Aina F.", stars: "★★★★★", text: "Bought it for a graduation gift and it was perfect." }
+   ],
+
+   "Graceful Orchids": [
+      { name: "Yasmin Q.", stars: "★★★★★", text: "Elegant, premium, and very classy. The orchids looked stunning." },
+      { name: "Mei Lin", stars: "★★★★★", text: "Perfect for a wedding gift. It looked sophisticated and unique." }
+   ],
+
+   "Pastel Dreams Box": [
+      { name: "Farah D.", stars: "★★★★★", text: "The pastel colours were dreamy and soft. Very cute arrangement." },
+      { name: "Emily R.", stars: "★★★★★", text: "Loved the box style. It felt modern and pretty." }
+   ],
+
+   "Crimson Passion": [
+      { name: "Daniel L.", stars: "★★★★★", text: "The red roses were bold and romantic. Very impressive." },
+      { name: "Amira S.", stars: "★★★★★", text: "The bouquet looked dramatic and expensive. Loved it." }
+   ],
+
+   "Lily of The Valley": [
+      { name: "Sophia K.", stars: "★★★★★", text: "Delicate, elegant, and beautifully fragrant. It felt very luxurious." },
+      { name: "Nur Iman", stars: "★★★★☆", text: "Very soft and pretty. The bouquet looked unique and timeless." }
+   ]
+};
+
+const reviewPopup = document.getElementById("reviewPopup");
+const closeReviewPopup = document.getElementById("closeReviewPopup");
+const reviewContainer = document.getElementById("reviewContainer");
+const reviewBouquetName = document.getElementById("reviewBouquetName");
+
+document.querySelectorAll(".reviews-link").forEach(button => {
+   button.addEventListener("click", event => {
+      event.preventDefault();
+
+      const card = button.closest(".product-card");
+      const bouquetName = card.querySelector("h4").textContent;
+      const reviews = bouquetReviews[bouquetName] || [];
+
+      reviewBouquetName.textContent = bouquetName + " Reviews";
+      reviewContainer.innerHTML = "";
+
+      reviews.forEach(review => {
+         reviewContainer.innerHTML += `
+            <div class="review-card">
+               <div class="review-header">
+                  <span class="review-name">${review.name}</span>
+                  <span class="review-stars">${review.stars}</span>
+               </div>
+               <p class="review-text">${review.text}</p>
+            </div>
+         `;
+      });
+
+      reviewPopup.classList.add("active");
+   });
+});
+
+closeReviewPopup.addEventListener("click", () => {
+   reviewPopup.classList.remove("active");
+});
+
+reviewPopup.addEventListener("click", event => {
+   if (event.target === reviewPopup) {
+      reviewPopup.classList.remove("active");
+   }
+});
+
+</script>
+
+</body>
+</html>
