@@ -73,14 +73,16 @@
 .products-showcase {
    background-color: #FAF5F0;
    padding: 60px 8% 80px 8%;
-   text-align: center;
+   text-align: left;
 }
 
 .showcase-header h3 {
    font-size: 1.25rem;
    font-weight: 600;
    letter-spacing: 0.05em;
-   margin-bottom: 8px;
+   margin-right: 10px;
+   margin-bottom: 50px;
+
    color: #1A1A1A;
 }
 
